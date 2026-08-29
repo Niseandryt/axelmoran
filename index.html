@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axel Morán — Página Personal</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-black: #1A1A1A;
+      --color-blue: #2E86AB;
+      --color-gray: #F2F2F2;
+      --color-red: #E63946;
+      --color-violet: #7B2CBF;
+    }
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: var(--color-gray);
+      color: var(--color-black);
+    }
+    header {
+      background-color: var(--color-black);
+      color: var(--color-gray);
+      padding: 1rem;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    header .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-violet);
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, var(--color-black), var(--color-blue));
+      color: var(--color-gray);
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: var(--color-violet);
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--color-blue);
+      margin-bottom: 1rem;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--color-violet);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 5px solid var(--color-red);
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      background: var(--color-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: var(--color-violet);
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">AM</span>
+  </header>
+
+  <section class="hero">
+    <h1>Axel Morán</h1>
+    <h2>Desarrollador Fullstack | Mentor Tecnológico | Líder Meticuloso</h2>
+    <p>Tecnólogo y desarrollador que convierte ideas en sistemas prácticos y sólidos.</p>
+  </section>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <div class="about">
+      <div class="card">
+        <h3>Esencia</h3>
+        <p>Tecnólogo y desarrollador meticuloso que lidera con calidad y colaboración.</p>
+      </div>
+      <div class="card">
+        <h3>Propuesta</h3>
+        <p>Ofrezco desarrollo fullstack y mentoría técnica, diferenciándome por mi enfoque pedagógico y obsesión por la calidad.</p>
+      </div>
+      <div class="card">
+        <h3>Valores</h3>
+        <p>Reconocimiento justo, respeto, perfeccionismo sano y compromiso de ir más allá.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Qué hago</h2>
+    <div class="about">
+      <div class="card">
+        <h3>Fullstack</h3>
+        <p>Construyo sistemas completos, desde backend hasta frontend.</p>
+      </div>
+      <div class="card">
+        <h3>Pedagogía tecnológica</h3>
+        <p>Aprender enseñando y enseñar aprendiendo, con explicaciones claras.</p>
+      </div>
+      <div class="card">
+        <h3>Optimización</h3>
+        <p>Buenas prácticas, refactorización, productividad y eficiencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Proyectos</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>[PROYECTO 1]</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+      <div class="project">
+        <h3>[PROYECTO 2]</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+      <div class="project">
+        <h3>[PROYECTO 3]</h3>
+        <p>Descripción breve del proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contacto</h2>
+    <a href="mailto:tuemail@example.com">Correo</a>
+    <a href="https://www.linkedin.com/in/axel-mor%C3%A1n-597185251/">LinkedIn</a>
+    <a href="https://github.com/Niseandryt">GitHub</a>
+  </section>
+</body>
+</html>
