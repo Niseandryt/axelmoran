@@ -234,5 +234,24 @@
       <a href="https://github.com/Niseandryt">GitHub</a>
   </section>
 </body>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const text = 'Transformo ideas en sistemas prácticos y sólidos';
+    const terminal = document.querySelector('.terminal');
+    const cursor = document.querySelector('.cursor');
+    
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        terminal.innerHTML = '$ echo "' + text.substring(0, i+1) + '"' + '<span class="cursor"></span>';
+        i++;
+        setTimeout(typeWriter, 80); // velocidad de escritura (ms)
+      } else {
+        terminal.innerHTML = '$ echo "' + text + '"' + '<span class="cursor"></span>';
+      }
+    }
+    typeWriter();
+  });
+</script>
 </html>
 
